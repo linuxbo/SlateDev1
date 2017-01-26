@@ -1,5 +1,5 @@
 ---
-title: API Reference
+title: Alpaca API Reference
 
 language_tabs:
   - shell
@@ -19,7 +19,7 @@ search: true
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Welcome to the Alpaca API! Did you know that Alpacas make a bvvt sound!? You can use our API to access Alpaca API endpoints, which can get information on various Alpacas in our database.
 
 We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
@@ -30,69 +30,69 @@ This example API documentation page was created with [Slate](https://github.com/
 > To authorize, use this code:
 
 ```ruby
-require 'kittn'
+require 'alpaca'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+api = Alpaca::APIClient.authorize!('bvvtbvvtbvvt')
 ```
 
 ```python
-import kittn
+import Alpaca
 
-api = kittn.authorize('meowmeowmeow')
+api = Alpaca.authorize('bvvtbvvtbvvt')
 ```
 
 ```shell
 # With shell, you can just pass the correct header with each request
 curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
+  -H "Authorization: bvvtbvvtbvvt"
 ```
 
 ```javascript
-const kittn = require('kittn');
+const alpaca = require('alpaca');
 
-let api = kittn.authorize('meowmeowmeow');
+let api = alpaca.authorize('bvvtbvvtbvvt');
 ```
 
-> Make sure to replace `meowmeowmeow` with your API key.
+> Make sure to replace `bvvtbvvtbvvt` with your API key. [I have already done so, as the API key is now bvvt instead of meow]
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
+Alpaca uses API keys to allow access to the API. You can register a new Alpaca API key at our [developer portal](http://Alpaca.com/developers).
 
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
+Alpaca expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
-`Authorization: meowmeowmeow`
+`Authorization: bvvtbvvtbvvt`
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+You may replace <code>bvvtbvvtbvvt</code> with your personal API key, however I would not suggest it.
 </aside>
 
-# Kittens
+# Alpaca
 
-## Get All Kittens
+## Get All Alpaca
 
 ```ruby
-require 'kittn'
+require 'alpaca'
 
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
+api = Alpaca::APIClient.authorize!('bvvtbvvtbvvt')
+api.alpaca.get
 ```
 
 ```python
-import kittn
+import alpaca
 
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
+api = alpaca.authorize('bvvtbvvtbvvt')
+api.alpaca.get()
 ```
 
 ```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
+curl "http://alpaca.com/api/alpaca"
+  -H "Authorization: bvvtbvvtbvvt"
 ```
 
 ```javascript
-const kittn = require('kittn');
+const alpaca = require('alpaca');
 
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
+let api = alpaca.authorize('bvvtbvvtbvvt');
+let kittens = api.alpaca.get();
 ```
 
 > The above command returns JSON structured like this:
@@ -101,26 +101,26 @@ let kittens = api.kittens.get();
 [
   {
     "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
+    "name": "Bailey",
+    "breed": "Huacaya",
+    "fluffiness": 10,
+    "cuteness": 10
   },
   {
     "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
+    "name": "Elwen",
+    "breed": "Huacaya",
+    "fluffiness": 10,
     "cuteness": 10
   }
 ]
 ```
 
-This endpoint retrieves all kittens.
+This endpoint retrieves all Alpacas.
 
 ### HTTP Request
 
-`GET http://example.com/api/kittens`
+`GET http://example.com/api/alpacas`
 
 ### Query Parameters
 
@@ -186,4 +186,3 @@ This endpoint retrieves a specific kitten.
 Parameter | Description
 --------- | -----------
 ID | The ID of the kitten to retrieve
-
